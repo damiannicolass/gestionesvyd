@@ -94,6 +94,23 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+/*ver porque no toma flex*/
+.formulario{
+    background-color: #d1dce3b6;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.h5__formulario{
+    margin: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
 
 .h3__footer{
     text-align: center;

@@ -120,18 +120,63 @@
 
 <!--formulario-->
 
-<div class="container">
-  <h3>Formulario de Contacto</h3>
+<div class="container formulario col-11 col-md-10 col-lg-12 shadow-lg p-3 mb-5  rounded">
   <form class="row g-3" action="https://formsubmit.co/gestionesvyd@gmail.com" method="POST">
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Email</label>
+    <h5 class="h5__formulario">Qué querés cotizar?</h5>
+    <select name="productos" class="form-select mt-0" aria-label="Default select example">      
+      <option selected>Seleccione una opcion</option>
+      <option value="Auto">Auto</option>
+      <option value="Moto">Moto</option>
+      <option value="Bicicleta">Bicicleta</option>
+      <option value="Otro">Otro</option>
+    </select>
+
+    <label for="exampleFormControlInput1" class="mb-0 form-label">Completá tus datos:</label>
+      <input name="Nombre" class="form-control" type="text" placeholder="Nombre" aria-label="default input example">
+
+      <input name="Celular" class="form-control" type="text" placeholder="Celular" aria-label="default input example">
+
+
       <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+
+     <label for="exampleFormControlInput1" class="mb-0 form-label">Completá los datos de tu vehículo</label>
+     <input name="Marca" class="form-control" type="text" placeholder="Marca" aria-label="default input example">
+
+    <input name="Modelo y Version" class="form-control" type="text" placeholder="Modelo y versión" aria-label="default input example">
+
+    <select name="Año" class="form-select" aria-label="Default select example">
+      <option selected>Año</option>
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+      <option value="2021">2021</option>
+    </select>
+
+    <input name="Localidad" class="form-control" type="text" placeholder="Localidad" aria-label="default input example">
+
+  
+    <div class="form-check form-switch">
+      <p>Uso del vehiculo</p>
+      <input name="Uso del vehiculo comercial" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckDefault">Comercial</label>
     </div>
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Escribe algo</label>
-      <textarea name="ejemplo" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      <button type="submit" class="btn btn-primary">Submit</button>
+
+    <div class="form-check form-switch">
+      <input name="Uso del vehiculo Particular" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+      <label class="form-check-label" for="flexSwitchCheckChecked">Particular</label>
     </div>
+    
+    <div class="form-check form-switch">
+      <p>Tiene equipo de GNC?</p>
+      <input name="GNC SI" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label class="form-check-label" for="flexSwitchCheckDefault">SI</label>
+    </div>
+
+    <div class="form-check form-switch">
+      <input name="GNC NO" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+      <label class="form-check-label" for="flexSwitchCheckChecked">No</label>
+    </div>
+
+      <button type="submit" class="btn btn-primary">Enviar</button>
   </form>
 </div>
         <!--footer-->
